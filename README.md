@@ -1,1 +1,1 @@
-# Simple Online-calculator
+# Simple Online Calculator
