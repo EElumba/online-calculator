@@ -70,6 +70,29 @@ h1 {
     font-size: 2em;
 }
 
+.button:hover {
+    background-color: var(--orange);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.button:active {
+    background-color: var(--white);
+    color: black;
+    cursor: pointer;
+}
+
+#divide:hover, #multiply:hover, #subtract:hover, #add:hover, #equals:hover {
+    background-color: var(--dark-gray);
+    color: white;
+    cursor: pointer;  
+}
+
+#divide:active, #multiply:active, #subtract:active, #add:active, #equals:active {
+    background-color: var(--orange);
+    color: white;
+    cursor: pointer;  
+}
 /*--History Panel--*/
 .btn {
   padding: 8px 12px;
@@ -78,6 +101,16 @@ h1 {
   background: #151824;
   color: #e9edf5;
   cursor: pointer;
+}
+
+.btn:hover {
+  background-color: yellow;
+  color: black;
+}
+
+.btn:active {
+  background-color:#151824;
+  color: #e9edf5;
 }
 
 .btn.small {
