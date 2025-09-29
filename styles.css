@@ -1,0 +1,121 @@
+:root {
+    --dark-gray: #333b33;
+    --white: #dce8dc;
+    --orange: #f8a929;
+    --display: #647d6a;
+    --light-gray: #6b6b6b;
+}
+
+body {
+    background-color: #69d028
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: black;
+    margin-top: 20px;
+}
+
+.calculator{
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    background-color: #3d3a3a;
+    width: 500px;
+    height: 600px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.display {
+    background-color: var(--display);
+    border-radius: 10px;
+    text-align: right;
+    font-size: 6rem;
+    font-family: 'Segment7', monospace;
+    width: 390px;
+    height: 100px;
+    margin: 0 auto 40px auto;
+    padding: 10px;
+}
+
+.content {
+    background-color: black;
+    border-radius: 10px;
+    width: 400px;
+    height: 450px;
+    margin: auto;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+    box-sizing: border-box; 
+}
+
+.button {
+    border-radius: 50%;
+    width: 81px;
+    height: 81px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+#divide, #multiply, #subtract, #add, #equals {
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 2em;
+}
+
+/*--History Panel--*/
+.btn {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid #1f2430;
+  background: #151824;
+  color: #e9edf5;
+  cursor: pointer;
+}
+
+.btn.small {
+  padding: 6px 10px; 
+  font-size: 0.9rem;
+}
+
+#history-panel {
+  max-width: 500px;
+  margin: 12px auto;
+  background: #141824;
+  color: #e9edf5;
+  border: 1px solid #1f2430;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.history-bar { 
+  display: flex; 
+  align-items: center; 
+  gap: 12px; 
+}
+
+.history-bar h2 { 
+  margin: 0; 
+  font-size: 1.1rem; 
+}
+
+.history-bar .spacer { 
+  flex: 1; 
+}
+
+#history-list {
+  margin: 10px 0 0;
+  padding-left: 20px;
+}
+
+#history-list li {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}

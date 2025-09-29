@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A simple online calculator">
+    <title>Online Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="history">
+      <button id="history-toggle" class="btn">History</button>
+    </header>
+    
+    <h1>Online Calculator</h1>
+    <aside id="history-panel" hidden>
+      <div class="history-bar">
+        <h2>History</h2>
+        <div class="spacer"></div>
+        <button id="history-clear" class="btn small">Clear</button>
+      </div>
+      <ol id="history-list"></ol>
+    </aside>
+
+
+    <main id="app" class="calculator">
+      <div class="calculator-outer">
+        <div id="display" class="display">0</div>
+
+        <div id="keys" class="content">
+          <button id="clear" class="button">AC</button>
+          <button id="percent" class="button">%</button>
+          <button id="delete" class="button">DEL</button>
+          <button id="divide" class="button">÷</button>
+          <button class="button" data-digit="7">7</button>
+          <button class="button" data-digit="8">8</button>
+          <button class="button" data-digit="9">9</button>
+          <button id="multiply" class="button">x</button>
+          <button class="button" data-digit="4">4</button>
+          <button class="button" data-digit="5">5</button>
+          <button class="button" data-digit="6">6</button>
+          <button id="subtract" class="button">-</button>
+          <button class="button" data-digit="1">1</button>
+          <button class="button" data-digit="2">2</button>
+          <button class="button" data-digit="3">3</button>
+          <button id="add" class="button">+</button>
+          <button id="plus/minus" class="button">+/-</button>
+          <button class="button" data-digit="0">0</button>
+          <button id="decimal" class="button">.</button>
+          <button id="equals" class="button">=</button>                
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+
+  </body>
+</html>
